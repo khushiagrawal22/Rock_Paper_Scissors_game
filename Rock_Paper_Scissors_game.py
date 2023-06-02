@@ -13,7 +13,7 @@ chances = 1
 print("Hi! Welcome to my Rock Paper Scissors Game")
 print("Choose\nr for Rock\np for Paper\ns Scissors\n")
 
-while (chances <= 5) :
+while (chances <= 10) :
     a = input("Your turn\n")
     choice = random.choice(Game)
     print(choice)
@@ -54,10 +54,10 @@ while (chances <= 5) :
     else:
         print("You Enter wrong input")
 
-    print(5 - chances, "chances left")
+    print(10 - chances, "chances left")
     chances = chances + 1
 
-if chances > 5:
+if chances > 10:
     print("GAME OVER")
 
 if computer_points > player_points :
